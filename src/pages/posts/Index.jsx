@@ -46,6 +46,7 @@ const IndexPost = () => {
                     <th>NO.</th>
                     <th>TITLE</th>
                     <th>CONTENT</th>
+                    <th>AKSI</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -54,6 +55,17 @@ const IndexPost = () => {
                       <td>{index + 1}</td>
                       <td>{post.title}</td>
                       <td>{post.content}</td>
+                      <td>
+                        <Button
+                          as={Link}
+                          to={`/posts/edit/${post.id}`}
+                          variant="primary"
+                          size="sm"
+                          className="me-2"
+                        >
+                          EDIT
+                        </Button>
+                      </td>
                     </tr>
                   ))}
                 </tbody>
