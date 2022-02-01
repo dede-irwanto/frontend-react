@@ -3,7 +3,7 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 
 const EditPost = () => {
   return (
-    <Container>
+    <Container className="mt-3">
       <Row>
         <Col md="{12}">
           <Card className="border-0 rounded shadow-sm">
