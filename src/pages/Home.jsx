@@ -8,7 +8,7 @@ const Home = () => {
         <Col className="{12}">
           <Card className="border-0 rounded shadow-sm">
             <Card.Body className="p-4">
-              <h1>Express.JS + React.JS</h1>
+              <h1>Express JS + React JS</h1>
               <p className="lead">
                 Belajar FullStack <strong>Express.js dan React.js</strong>
               </p>
