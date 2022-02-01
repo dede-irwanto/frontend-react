@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 
-const Index = () => {
+const IndexPost = () => {
   return (
     <Container>
       <Row>
@@ -15,4 +15,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default IndexPost;
