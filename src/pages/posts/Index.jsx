@@ -1,6 +1,6 @@
 // import hook useState dan useEffect from react
 import axios from "axios";
-import { React, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 // import component react-bootstrap
 import { Button, Card, Col, Container, Row, Table } from "react-bootstrap";
