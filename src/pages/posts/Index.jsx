@@ -26,6 +26,14 @@ const IndexPost = () => {
     setPosts(data);
   };
 
+  // function delete post
+  const deletePost = async (id) => {
+    // sending
+    await axios.delete(`http://localhost:3001/api/posts/delete/${id}`);
+    // panggil fetchData
+    fecthData();
+  };
+
   return (
     <Container className="mt-3">
       <Row>
@@ -64,6 +72,13 @@ const IndexPost = () => {
                           className="me-2"
                         >
                           EDIT
+                        </Button>
+                        <Button
+                          variant="danger"
+                          size="sm"
+                          onClick={() => deletePost(post.id)}
+                        >
+                          DELETE
                         </Button>
                       </td>
                     </tr>
